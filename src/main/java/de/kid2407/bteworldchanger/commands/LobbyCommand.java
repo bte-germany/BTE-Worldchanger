@@ -19,7 +19,7 @@ public class LobbyCommand extends Command {
     private static final String SERVER_LOBBY = "Lobby";
 
     public LobbyCommand() {
-        super("lobby");
+        super("lobby", null, "l");
     }
 
     @Override
