@@ -1,0 +1,5 @@
+name: BTE-Worldchanger
+version: ${project.version}
+main: de.kid2407.bteworldchanger.BTEWorldchanger
+description: A simple Plugin to allow sending players to soecific subservers with a couple simple commands
+author: kid2407
