@@ -25,6 +25,7 @@ public class FederalStateCommand extends Command implements TabExecutor {
     private static final String SERVER_2 = "Server2";
     private static final String SERVER_3 = "Server3";
     private static final String SERVER_4 = "Server4";
+    private static final String SERVER_5 = "Server5";
 
     private final HashMap<String, String> federalStates = new HashMap<>();
 
@@ -83,20 +84,38 @@ public class FederalStateCommand extends Command implements TabExecutor {
     }
 
     private void generateFederalStatesMap() {
+        federalStates.put("bw", SERVER_3);
+        federalStates.put("by", SERVER_2);
+        federalStates.put("be", SERVER_1);
+        federalStates.put("bb", SERVER_1);
+        federalStates.put("hb", SERVER_2);
+        federalStates.put("hh", SERVER_4);
+        federalStates.put("he", SERVER_2);
+        federalStates.put("mv", SERVER_4);
+        federalStates.put("ni", SERVER_1);
+        federalStates.put("nw", SERVER_3);
+        federalStates.put("rp", SERVER_4);
+        federalStates.put("sl", SERVER_4);
+        federalStates.put("sn", SERVER_5);
+        federalStates.put("st", SERVER_2);
+        federalStates.put("sh", SERVER_4);
+        federalStates.put("th", SERVER_4);
+
+        federalStates.put("Baden-Württemberg", SERVER_3);
+        federalStates.put("Bayern", SERVER_2);
         federalStates.put("Berlin", SERVER_1);
         federalStates.put("Brandenburg", SERVER_1);
-        federalStates.put("Niedersachsen", SERVER_1);
-        federalStates.put("Bayern", SERVER_2);
-        federalStates.put("Hessen", SERVER_2);
         federalStates.put("Bremen", SERVER_2);
-        federalStates.put("Sachsen-Anhalt", SERVER_2);
-        federalStates.put("Baden-Würtemberg", SERVER_3);
+        federalStates.put("Hamburg", SERVER_4);
+        federalStates.put("Hessen", SERVER_2);
+        federalStates.put("Mecklenburg-Vorpommern", SERVER_4);
+        federalStates.put("Niedersachsen", SERVER_1);
         federalStates.put("Nordrhein-Westfalen", SERVER_3);
         federalStates.put("Rheinland-Pfalz", SERVER_4);
-        federalStates.put("Hamburg", SERVER_4);
-        federalStates.put("Schleswig-Holstein", SERVER_4);
-        federalStates.put("Mecklenburg-Vorpommern", SERVER_4);
         federalStates.put("Saarland", SERVER_4);
+        federalStates.put("Sachsen", SERVER_5);
+        federalStates.put("Sachsen-Anhalt", SERVER_2);
+        federalStates.put("Schleswig-Holstein", SERVER_4);
         federalStates.put("Thüringen", SERVER_4);
     }
 
