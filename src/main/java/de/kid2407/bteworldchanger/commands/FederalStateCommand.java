@@ -128,7 +128,7 @@ public class FederalStateCommand extends Command implements TabExecutor {
         Set<String> keys = federalStates.keySet();
 
         if (args.length > 0) {
-            return keys.stream().filter(s -> s.startsWith(args[0])).collect(Collectors.toList());
+            return keys.stream().filter(s -> s.toLowerCase().startsWith(args[0].toLowerCase())).collect(Collectors.toList());
         }
 
         return keys;
